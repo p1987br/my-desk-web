@@ -9,13 +9,14 @@ public class HelloController {
     
     @GetMapping(value="/", produces = MediaType.TEXT_PLAIN_VALUE)
     public String getMessage() {
-        return "Hello World Spring-Boot --- v3 ---- online! ";
+        return "Hello World Spring-Boot --- v4 ---- online! ";
     }
 
     @GetMapping(value="/env", produces = MediaType.TEXT_PLAIN_VALUE)
     public String getEnv() {
-	String var = System.getenv("env_var");
-        return "System property:" + var;
+	    String var = System.getenv("env_var");
+	    String db_var = System.getenv("db_connection")
+        return "System property:" + var +" and connectionDB:" + db_var;
     }
 
 }
