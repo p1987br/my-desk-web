@@ -9,7 +9,7 @@ public class HelloController {
     
     @GetMapping(value="/", produces = MediaType.TEXT_PLAIN_VALUE)
     public String getMessage() {
-        return "Hello World Spring-Boot --- v2 ---- online! ";
+        return "Hello World Spring-Boot --- v3 ---- online! ";
     }
 
     @GetMapping(value="/env", produces = MediaType.TEXT_PLAIN_VALUE)
